@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  justify-content: space-around;
+}
+.col_one {
+  width: 48%;
+}
+
+.col_two {
+  width: 48%;
+}
+
+.web input {
+  margin-bottom: 10px;
+}
+fieldset {
+  padding: 20px;
+  overflow: hidden;
+}
+
+.col_one label {
+  display: block;
+  margin: 15px 0 8px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.col_one input {
+  padding: 6px 0;
+}
+
+.col_one input,
+textarea {
+  width: 100%;
+}
+
+.rad {
+  display: inline-block;
+  padding-right: 10px;
+} 
+
+
+.web {
+  margin-bottom: 10px;
+}
+
+
+label[for='ProjStart'],
+label[for='ProjEnd'],
+label[for='category'] {
+  display: block;
+  margin: 10px 0 8px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type='date'] {
+  width: 100%;
+  padding: 6px 0;
+}
+.submit {
+  margin-top: 25px;
+}
+
+.btn-submit {
+  padding: 10px 18px;
+  border: none;
+  background-color: rgb(38, 197, 38);
+  color: white;
+  border-radius: 10px;
+}
+
+legend {
+  color: rgb(231, 1, 231);
+  font-weight: bold;
+  padding: 0 15px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 8px 0;
+}
+
+
+#category {
+
+ padding: 6px 0 6px 1px;
+}

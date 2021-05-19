@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:wght@400;500;700;900&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="" method="">
+      <div class="col_one">
+        <fieldset>
+          <legend>Personal Data</legend>
+          <div>
+            <label for="firsName">First Name:</label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="John"
+              maxlength="30"
+            />
+          </div>
+
+          <div>
+            <label for="lastName">Last Name:</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Doe"
+              maxlength="30"
+            />
+          </div>
+
+          <div>
+            <label for="Street">Street:</label>
+            <input
+              type="text"
+              name="Street"
+              id="Street"
+              placeholder="Leuthenstr. 80"
+              maxlength="60"
+            />
+          </div>
+
+          <div>
+            <label for="zipCode">Zipcode:</label>
+            <input
+              type="text"
+              name="zipCode"
+              id="zipCode"
+              placeholder="495367"
+              maxlength="7"
+            />
+          </div>
+
+          <div>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Oberhausen" />
+          </div>
+
+          <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="max@mustermann.de"
+            />
+          </div>
+
+          <div class="comments">
+            <label for="comments">Comments:</label>
+            <textarea
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="10"
+              placeholder="Enter your comments here"
+            ></textarea>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="col_two">
+        <fieldset>
+          <legend>Products</legend>
+
+          <div class="web">
+            <p>Web Design:</p>
+
+            <div class="rad">
+              <input
+                type="radio"
+                id="individual"
+                name="WebDesign"
+                value="individual"
+              />
+              <label for="individual">Individual</label>
+            </div>
+
+            <div class="rad">
+              <input
+                type="radio"
+                id="template"
+                name="WebDesign"
+                value="template"
+              />
+              <label for="template">Template</label>
+            </div>
+          </div>
+
+          <div class="web">
+            <p>Web Development:</p>
+
+            <div>
+              <input
+                type="checkbox"
+                name="WebDev"
+                id="htmlcss"
+                value="HTML_CSS"
+              />
+              <label for="htmlscss">HTML & CSS</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="WebDev" id="JS" value="JavaScript" />
+              <label for="JS">JavaScript</label>
+            </div>
+
+            <div>
+              <input type="checkbox" name="WebDev" id="Mongo" value="MongoDB" />
+              <label for="Mongo">MongoDB</label>
+            </div>
+          </div>
+
+          <div>
+            <label for="ProjStart">Project Start:</label>
+            <input type="date" name="ProjStart" id="ProjStart" />
+          </div>
+
+          <div>
+            <label for="ProjEnd">Project End:</label>
+            <input type="date" name="ProjEnd" id="ProjEnd" />
+          </div>
+
+          <div class="drop">
+            <label for="category">Category:</label>
+            <select name="category" id="category">
+              <option value="Personal">Personal</option>
+              <option value="Business">Business</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <div class="submit">
+          <button class="btn-submit">Order our Services</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
